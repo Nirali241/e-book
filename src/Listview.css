@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+  justify-content: space-evenly;
+}
+.details {
+  object-fit: contain;
+  padding: 10px;
+}
+
+.img {
+  align-content: center;
+}
