@@ -12,7 +12,9 @@
   font-size: 1rem;
   font-weight: 400;
 }
-
+.title_name {
+  padding-bottom: 5px;
+}
 .details {
   object-fit: contain;
   padding-top: 10px;

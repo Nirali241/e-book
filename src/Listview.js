@@ -11,7 +11,7 @@ const Listview = ({ item }) => {
       </div>
       <div className="space-ls"></div>
       <div className="details-ls">
-        <div className="title">Title : <strong>{item.title}</strong></div>
+        <div className="title">  <strong>{item.title}</strong></div>
         <div>Description : {item.description}</div>
       </div>
     </div>
