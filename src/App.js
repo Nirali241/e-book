@@ -1,4 +1,3 @@
-
 import './App.css';
 import React, {useState} from 'react';
 import Header from './Header';
@@ -9,6 +8,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
   const [inputVal, setInputVal] = useState("");
+  const [theme, setTheme] = useState('light');
   const handleChange = (e) => {
     setInputVal(e.target.value);
   };
@@ -20,16 +20,16 @@ function App() {
   });
 
   return (
-    <div className="App">
+    <div className={`${theme === "light" ? "App" : "App_Dark"}`}>
       <BrowserRouter>
-        <Header inputVal={inputVal} handleChange={(e) => handleChange(e)} />
+        <Header inputVal={inputVal} handleChange={(e) => handleChange(e)} theme={theme} setTheme={setTheme}/>
         <Switch>
           <Route exact path="/">
             <div className="body">
               {filteredArray.length > 0 || inputVal === "" ? (
                 filteredArray.map((item) => <Listview item={item} />)
               ) : (
-                <h4>No data found</h4>
+                <h4 className="error"><h1>😢</h1>Oops!! No Data Found</h4>
               )}
             </div>
           </Route>
@@ -38,7 +38,8 @@ function App() {
               {filteredArray.length > 0 ? (
                 filteredArray.map((item) => <Gridview item={item} />)
               ) : (
-                <h4>No data found</h4>
+                
+                <h4 className="error"><h1>😢</h1>Oops!! No Data Found</h4>
               )}
             </div>
           </Route>

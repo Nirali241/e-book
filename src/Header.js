@@ -2,10 +2,11 @@ import React from 'react'
 import SearchIcon from "@material-ui/icons/Search";
 import ViewCompactIcon from '@material-ui/icons/ViewCompact';
 import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
+import Brightness4Icon from '@material-ui/icons/Brightness4';
 import {useHistory} from 'react-router-dom';
 import './Header.css';
 
-function Header({inputVal, handleChange}) {
+function Header({inputVal, handleChange, theme, setTheme}) {
     let history = useHistory();
     const handlegrid = () => {
         history.push("/grid");
@@ -13,6 +14,14 @@ function Header({inputVal, handleChange}) {
       const handlelist = () => {
         history.push("/");
       };
+      const handletoggle = () => {
+        if(theme === 'light') {
+            setTheme('Dark');
+        }
+        else{
+            setTheme('light');
+        }
+      }
     return (
         <div className="Header_container">
             <div className="logo" >
@@ -31,7 +40,10 @@ function Header({inputVal, handleChange}) {
           <span className="header__optionLineOne" onClick={handlelist}><FormatListBulletedIcon /></span>
           <span className="header__optionLineTwo">ListView</span>
         </div>
-
+        <div className="header__option">
+          <span className="header__optionLineOne" onClick={handletoggle}><Brightness4Icon /></span>
+          <span className="header__optionLineTwo">Theme</span>
+        </div>
             
         </div>
     )
