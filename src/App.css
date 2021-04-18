@@ -2,20 +2,57 @@
   margin: 0;
   padding: 0;
 }
+.title_app {
+  margin-left: 40vw;
+  margin-right: 40vw;
+  padding-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(177, 176, 176);
+}
+.title_box {
+  background-color: white;
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  border: solid 0.8px;
+  border-bottom-color: rgb(211, 211, 210);
+}
+.title_appdark {
+  margin-left: 40vw;
+  margin-right: 40vw;
+  padding-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(99, 99, 99);
+}
+.title_dark {
+  background-color: rgb(36, 36, 36);
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  border-bottom: solid 0.8px;
+  border-bottom-color: rgb(97, 96, 96);
+}
 
 .body_grid {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
+  justify-content: space-evenly;
 
-  padding-top: 36px;
+  padding-top: 30px;
 }
 .App {
-  color: black;
+  color: rgb(119, 119, 119);
   background-color: white;
 }
 .App_Dark {
-  color: rgb(252, 249, 249);
+  color: rgb(189, 188, 188);
   background-color: rgb(36, 36, 36);
 }
 .error {
@@ -23,8 +60,9 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  background-color: rgb(141, 175, 207);
+
   color: rgb(230, 20, 20);
   height: 100vh;
   text-align: center;
+  margin-left: 5vw;
 }

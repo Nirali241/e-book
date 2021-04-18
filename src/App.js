@@ -23,6 +23,9 @@ function App() {
     <div className={`${theme === "light" ? "App" : "App_Dark"}`}>
       <BrowserRouter>
         <Header inputVal={inputVal} handleChange={(e) => handleChange(e)} theme={theme} setTheme={setTheme}/>
+        <div className= {`${theme === "light" ? "title_box" : "title_dark"}`}>
+          <div className={`${theme === "light" ? "title_app" : "title_appdark"}`}>Book Library.... </div> 
+          </div>
         <Switch>
           <Route exact path="/">
             <div className="body">

@@ -46,6 +46,7 @@ function Header({inputVal, handleChange, theme, setTheme}) {
         </div>
             
         </div>
+        
     )
 }
 
