@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+E-Book
+functionality : 
+  Gridview
+  ListView
+  Search Tab if book is Not found then display Error Message
+  Theme Change
+  popUp menu which describe details and book id
+  
+  
+  
+  
