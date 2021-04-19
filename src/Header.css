@@ -39,11 +39,19 @@
 }
 .header__optionLineOne {
   font-size: 10px;
+  transition: 0.5s ease;
+}
+.header__optionLineOne:hover {
+  opacity: 0.6;
 }
 
 .header__optionLineTwo {
   font-size: 13px;
   font-weight: 600;
+  transition: 0.5s ease;
+}
+.header__optionLineTwo:hover {
+  opacity: 0.6;
 }
 
 .header__nav {

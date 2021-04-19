@@ -13,6 +13,10 @@
   width: 100px;
   height: 140px;
   object-fit: content;
+  transition: 0.5s ease;
+}
+img:hover {
+  opacity: 0.6;
 }
 .card-ls {
   padding: 15px;

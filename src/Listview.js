@@ -1,10 +1,13 @@
 import React from "react";
 import './Listview.css'
 
-const Listview = ({ item }) => {
+const Listview = ({ item , setModal, setCurr}) => {
   return (
     
-    <div className="container-ls" >
+    <div className="container-ls" onClick={() => {
+      setModal(true);
+      setCurr(item);
+    }} >
    
       <div className="card-ls">
         <img className="img" src={item.url} alt="book" />
